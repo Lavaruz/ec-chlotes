@@ -1,67 +1,87 @@
-body{
-  background-color: aliceblue;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+}
+#hero{
+  background-image: url("/img/hero.jpg");
+  background-size: cover;
+  height: 100vh;
 }
 nav{
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-nav .container-fluid{
-  margin: 0 5rem;
-}
-main{
-  margin: 0 5rem;
-}
-#main-hero{
-  height: 110vh;
-}
-#job-list{
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  padding: 2rem;
-}
-.job{
-  border: .2px solid lightgray;
-  border-radius: 10px;
-  padding: 1rem;
-  cursor: pointer;
-}
-.job ul li{
-  list-style-type: none;
-}
-.job-info{
-  border: .2px solid lightgray;
-  border-radius: 10px;
-  position: sticky;
-  top: 10px;
-  padding: 2rem 1rem;
-}
-.job-desc{
-  height: 50vh;
-}
-.dropdown-menu li{
-  width: 100%;
-}
-.js-example-basic-single{
-  width: 100%;
-}
-.hiring a{
+nav a{
+  font-weight: 600;
   text-decoration: none;
-  color: white;
-  margin: 0;
 }
-#hiring{
-  background-color: white;
-  border-radius: 30px;
-  padding: 3rem 5rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-.hiring-basic-form{
+#hero main{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 2rem;
-  row-gap: 1rem;
+  align-items: center;
+  height: 100%;
 }
-.hiring-button{
-  margin-top: 5rem;
+#hero main p{
+  letter-spacing: .75rem;
+}
+#hero main h1{
+  font-weight: 700;
+  font-size: 5rem;
+}
+
+/* FORHER */
+#forher{
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 3fr;
+  padding: 3rem;
+}
+#forher .left div{
+  width: 100%;
+  margin-top: 1.5rem;
+  height: 400px;
+  background-color: aliceblue;
+}
+#forher .left h1{
+  font-weight: 600;
+  text-decoration: underline;
+}
+#forher .right main{
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+#forher .right main div{
+  width: 100%;
+  height: 250px;
+  background-color: aliceblue;
+}
+#forher .right a{
+  text-decoration: none;
+}
+.active{
+  font-weight: 600;
+}
+
+/* POSTERS */
+#poster{
+  padding: 3rem;
+}
+#poster div{
+  width: 100%;
+  height: 300px;
+  background-color: aliceblue;
 }
