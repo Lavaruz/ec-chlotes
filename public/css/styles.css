@@ -12,6 +12,11 @@
   line-height: 1.2;
   color: var(--bs-heading-color);
 }
+img{
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
 #hero{
   background-image: url("/img/hero.jpg");
   background-size: cover;
@@ -44,33 +49,53 @@ nav a{
 /* FORHER */
 #forher{
   display: grid;
-  gap: 3rem;
-  grid-template-columns: 1fr 3fr;
+  gap: 5rem;
+  grid-template-columns: 1fr 2.5fr;
   padding: 3rem;
 }
-#forher .left div{
+.left div{
   width: 100%;
-  margin-top: 1.5rem;
-  height: 400px;
+  margin-top: 1rem;
   background-color: aliceblue;
 }
-#forher .left h1{
+.left h1{
   font-weight: 600;
   text-decoration: underline;
 }
-#forher .right main{
+.left img{
+  object-fit: cover;
+  /* object-position: bottom; */
+  height: 100%;
+  width: 100%;
+}
+.right main{
   margin-top: 1.5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1.5rem;
+  gap: 3rem;
+  text-align: center;
 }
-#forher .right main div{
+.right main p{
+  margin: 0;
+}
+.right main img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.right main .img{
+  margin-top: 1rem;
   width: 100%;
   height: 250px;
-  background-color: aliceblue;
 }
-#forher .right a{
+.right a{
   text-decoration: none;
+}
+#forhim{
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 3fr 1fr;
+  padding: 3rem;
 }
 .active{
   font-weight: 600;
@@ -82,6 +107,9 @@ nav a{
 }
 #poster div{
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-color: aliceblue;
+}
+#poster img{
+  /* object-position: 0 -16rem; */
 }
